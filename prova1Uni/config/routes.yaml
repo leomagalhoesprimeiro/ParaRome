@@ -1,0 +1,41 @@
+create_aluno:
+  path: /Criaralunos
+  controller: App\Controller\AlunosController::create
+  methods:
+    - POST
+
+Listar_aluno:
+  path: /Listar_aluno
+  controller: App\Controller\AlunosController::ListaTodos
+  methods:
+    - GET
+
+create_professor:
+  path: /Criarprofessor
+  controller: App\Controller\ControllerProfessores::create
+  methods:
+    - POST
+
+Listar_professor:
+  path: /Listar_professor
+  controller: App\Controller\ControllerProfessores::ListaTodos
+  methods:
+    - GET
+
+create_projeto:
+  path: /Criarprojeto/{id}
+  controller: App\Controller\ControllerProjeto:create
+  methods:
+    - POST
+
+Listar_projeto:
+  path: /Listar_projeto
+  controller: App\Controller\ControllerProjeto::ListaTodos
+  methods:
+    - GET
+
+Listar_projeto_id:
+  path: /Listar_projeto/{id}
+  controller: App\Controller\ControllerProjeto::ListaPorId
+  methods:
+    - GET
